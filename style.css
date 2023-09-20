@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    background-color: rgb(44, 42, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 8px solid white;
+    background-color: white;
+}
+
+.card {
+    color: white;
+    font-family: sans-serif;
+    background: rgb(136, 195, 241);
+    background: linear-gradient(90deg, rgba(136, 195, 241, 1) 0%, rgba(63, 151, 207, 1) 58%);
+    border-radius: 10px;
+    width: 620px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    padding: 4.7em 2.5em;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header,
+.percent {
+    font-size: 1.7em;
+}
+
+svg {
+    fill: white;
+    position: relative;
+    z-index: 2;
+}
+
+.sum {
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 0.8em;
+}
+.percent {
+    margin-top: auto;
+}
+.card::before, .card::after {
+    content: '';
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(133, 188, 222, 0.295);
+    background: linear-gradient(90deg, rgba(133, 188, 222, 0.8463760504201681) 0%, rgba(199, 216, 227, 0.253) 39%);
+    position: absolute;
+}
+.card::before {
+    top: -15%;
+    right: -20%;
+}
+
+.card::after {
+    bottom: -40%;
+    right: -5%;
+}
